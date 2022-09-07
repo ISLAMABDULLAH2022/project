@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ****************************header******************* */
+
+.header-top{
+    width: 100%;
+    height: 68px;
+    background-color: #2471a4;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 25px;
+}
+
+.header-top ul{
+    display: flex;
+    padding-left: 60px;
+}
+
+.header-top ul > li{
+    padding-left: 25px ;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+.header-top ul > li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.header-top a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.menu{
+    position: relative;
+}
+
+.submenu{
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu .submenu{
+    display: none;
+    background-color:#2471a4;
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
+
+.search{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+:focus{
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    opacity: .7;
+    transition: 1s ease;
+}
+
+:focus::-webkit-input-placeholder{
+    background-color: #312d38;
+    width: 100%;
+}
+
+/* ::-webkit-inpu:placeholder-shown{
+    height: 100%;
+    background-color: blue;
+} */
+
+.search input{
+    height: 38px;
+    width: 200px;
+    border: none;
+    background-color: #2471a4;
+}
+
+.search button{
+    height: 28px;
+    width: 30px;
+    border: none;
+    background-color: #2471a4;
+    color: #fff;
+}
+
+.header-bottom{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    outline: none;
+}
+
+.header-bottom ul {
+    height: 100px;
+    color: lightslategray;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-bottom ul li a{
+    color: #363535;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
+#activ{
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #63c1ec;
+    color: #fff;
+    margin: 0 30px;
+}
+
+.img-loco{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+/* ****************************header-end******************* */
+
+/* *********************A section about the college****************** */
+.about-the-college{
+    margin: 0 20px;
+}
+
+.about-the-college__article1--title{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about-the-college__article1--title--p-color{
+    color: #797979ce;
+}
+
+.about-the-college__article1-img-p{
+    display: flex;
+    margin: 8em 0;
+}
+
+.about-the-college__p--title--big{
+    font-size: 1.5em;
+}
+
+.about-the-college--a{
+    background-color:#63c1ec ;
+    padding: 8px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.about-the-college__article2{
+    display: flex;
+}
+
+.about-the-college__article2--title--h4{
+    margin: 1.5em 0;
+}
+
+.about-the-college__article2--footer{
+    margin-top: 1.2em;
+}
+
+.about-the-college__article2--h4-color{
+    color: #63c1ec;
+}
+/* *********************A section about the college-end****************** */
+
+
+/* ************************A section Alumni-start************************ */
+
+.Alumni{
+    text-align: center;
+}
+
+.Alumni p{
+    color: #797979ce;
+    padding: 0 1em 0 1em;
+}
+
+.Alumni__card{
+    display: flex;
+    margin-top: 50px;
+}
+
+.card{
+    width: 31%;
+    height: 17em;
+    border: none;
+    margin: 10px;
+}
+
+.card i{
+    font-size: 3.3em;
+    color: #63c1ec;
+    padding: 15px;
+}
+
+.card a{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #2471a4;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.Alumni__link{
+    background-color:#63c1ec ;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.College-and-Society__header h3{
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+/* ************************A section Alumni-end************************ */
