@@ -144,7 +144,7 @@ ul{
     justify-content: center;
     flex-direction: column;
     position: relative;
-    transition: flex 1s ease-out;
+    
 }
 .header__section_content h1, .header__section_content h2 {
   margin: 1rem;
@@ -160,10 +160,12 @@ ul{
     background-color: #4aafda;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: transform .4s; 
     
 }
 .header__section_content a:hover {
     background-color: #5a5757;
+    transform: scale(1.1);
 }
 .header__section_right, .header__section_left {
  position: absolute;
