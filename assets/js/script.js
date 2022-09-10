@@ -68,3 +68,20 @@ prevBtn.addEventListener('click',()=>{
     imgSection.classList.remove('active')
     
 })
+
+// play the video
+const videoElem = document.querySelector('.video-control')
+const videoBtn = document.querySelector('.fa-play')
+videoBtn.addEventListener('click',()=>{
+    videoElem.classList.add('active')
+    videoElem.play()
+    videoBtn.className ='fa fa-close'
+    videoClose = document.querySelector('.fa-close')
+videoClose.addEventListener('click',()=>{
+    videoElem.classList.remove('active')
+    videoBtn.className ='fa fa-play'
+    videoElem.pause()
+})
+})
+
+
