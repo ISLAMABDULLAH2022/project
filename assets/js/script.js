@@ -31,4 +31,40 @@ next.addEventListener('click', ()=>{
         currentImage =0
     } 
 })
-  
+
+// images Gallery
+const imagesBody = document.querySelectorAll('.img-body')
+const imgSection = document.querySelector('.images')
+const nextBtn = document.getElementById('btn1')
+const prevBtn = document.getElementById('btn2')
+
+
+// move the images
+
+
+let cuurentIndex = 0
+function translateImage(){
+        imgSection.classList.add('active')
+        imgSection.style.transition = `transform 6s ease-in`
+    setTimeout(()=>{
+        imgSection.classList.remove('active')
+        imgSection.style.transition = `transform 6s ease-in`
+    },6000)
+    
+}
+
+setInterval(()=>{
+    setTimeout(()=>{
+    translateImage()
+},6000)
+},12000)
+
+// move images using arrow
+nextBtn.addEventListener('click',()=>{
+    imgSection.classList.add('active')
+
+})
+prevBtn.addEventListener('click',()=>{
+    imgSection.classList.remove('active')
+    
+})

@@ -13,6 +13,8 @@
 body{
     background-color: cadetblue;
     /*font-family: 'Droid Arabic Kufi', serif;*/
+    overflow-x: hidden;
+    width: 100%;
     
 
     
@@ -326,4 +328,114 @@ a {
 }
 ul li {
     list-style: none;
+}
+.images__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f3F3F3;
+    padding: 3rem 2rem;
+    position: relative;
+}
+.images__section_body img{
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+}
+.images__section_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.images__section_head h2,.images__section_head p {
+    font-family: 'Droid Arabic Kufi', serif;
+}
+.images__section_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    width: 100%;
+    height: 80px;
+    width: 100vw;
+     position: relative;
+}
+.images__section_body .images {
+   position: absolute;
+   left: -50rem;
+   top: 0;
+   
+}
+.images__section_body img {
+    margin: 0 5px;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+}
+.images__section_body img:nth-last-of-type(1){
+   transform: translateX(20rem);
+}
+.images__section_body img:nth-last-of-type(2){
+    transform: translateX(40rem);
+}
+.images__section_body img:nth-last-of-type(3){
+    transform: translateX(60rem);
+}
+.images__section_body img:nth-last-of-type(4){
+    transform: translateX(80rem);
+}
+.images__section_body img:nth-last-of-type(5){
+    transform: translateX(100rem);
+}
+.images__section_body .images.active {
+    transform: translateX(60rem);
+    transition: transform 1s ease;
+}
+.images__section_body .images.inactive {
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+
+.images__section_head p {
+    color: rgb(97, 94, 94);
+}
+.images__section_points {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images__section_points .point {
+    background-color: gray;
+    margin: 0 0.4rem;
+    padding: 3px;
+    border-radius: 50%;
+}
+.images__section_points .point.active {
+    background-color: #000;
+}
+.images__section .line-middle {
+    height: 0.5px;
+    width: 2.5rem;
+    background-color:#000;
+    margin-bottom: 2rem;
+}
+.images__section .fa-arrow-right,.images__section .fa-arrow-left {
+   cursor: pointer;
+   position: absolute;
+   z-index: 1;
+   top: 60%;
+   background-color: rgba(0,0,0,0.3);
+   border-radius: 50%;
+   padding: 10px;
+}
+.images__section .fa-arrow-left {
+    left: 2rem;
+   
+}
+.images__section .fa-arrow-right {
+    right: 2rem;
 }
