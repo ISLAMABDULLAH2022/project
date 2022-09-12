@@ -1,9 +1,8 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Droid Arabic";
+    font-family: 'Cairo', sans-serif;
 }
 
 ::selection{
@@ -25,11 +24,11 @@
 
 .header-top ul{
     display: flex;
-    padding-left: 60px;
+    padding-left: 100px;
 }
 
 .header-top ul > li{
-    padding-left: 25px ;
+    padding-left: 22px ;
     display: flex;
 }
 
@@ -39,14 +38,14 @@ ul{
 
 .header-top ul > li a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
 
-.header-top a{
+.English{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
@@ -58,7 +57,7 @@ ul{
 .submenu{
     padding: 10px;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .menu .submenu{
@@ -76,7 +75,7 @@ ul{
 
 .search{
     position: absolute;
-    top: 30px;
+    top: 28px;
     left: 0;
 }
 
@@ -88,9 +87,9 @@ ul{
     color: #fff;
     height: 100%;
     width: 100%;
-    font-size: 15px;
+    font-size: 12px;
     opacity: .7;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 
 :focus::-webkit-input-placeholder{
@@ -98,16 +97,13 @@ ul{
     width: 100%;
 }
 
-/* ::-webkit-inpu:placeholder-shown{
-    height: 100%;
-    background-color: blue;
-} */
-
 .search input{
     height: 38px;
     width: 200px;
     border: none;
     background-color: #2471a4;
+    font-size: 18px;
+    color: #fff;
 }
 
 .search button{
@@ -128,7 +124,7 @@ ul{
 .header-bottom ul {
     height: 100px;
     color: lightslategray;
-    font-size: 22px;
+    font-size: 16px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -137,7 +133,7 @@ ul{
 .header-bottom ul li a{
     color: #363535;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     margin-left: 60px;
 }
@@ -163,9 +159,9 @@ ul{
     margin: 0 20px;
 }
 
-.about-the-college__article1--title h4{
+.about-the-college__article1--title h3{
     text-align: center;
-    font-size: 28px;
+    font-size: 23px;
     color: #474747;
 }
 
@@ -173,7 +169,7 @@ ul{
     color: #7c7c7cce;
     text-align: center;
     margin-bottom: 100px;
-    font-size: 20px;
+    font-size: 14px;
     position: relative;
 }
 
@@ -190,40 +186,56 @@ ul{
 .about-the-college__article1-img-p{
     display: flex;
     margin: 8em 0;
-    font-size: 20px;
+    
 }
 
 .about-the-college__p--title--big{
-    font-size: 1.7em;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 14px;
     color: #474747;
+    margin-right: 10px;
+}
+
+.about-the-college__p--text{
+    margin: 0 15px;
+    font-size: 16px;
 }
 
 .about-the-college--a{
     background-color:#63c1ec ;
-    padding: 8px 25px;
-    border-radius: 5px;
+    padding: 5px 23px;
+    border-radius: 3px;
     text-decoration: none;
+    font-size: 15px;
     color: #fff;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-right: 83%;
 }
 
 .about-the-college__article2{
     display: flex;
 }
 
-.about-the-college__article2--title--h4{
-    margin: 1.5em 0;
+.about-the-college__article2--title--h3{
+    margin: 20px 0;
+    font-size: 22px;
 }
 
-.about-the-college__article2--footer{
-    margin-top: 1.2em;
+.about-the-college__article2--p--text{
+    font-size: 16px;
 }
 
 .about-the-college__article2--h4-color{
     color: #63c1ec;
 }
+
+.about-the-college__article2--footer{
+    font-size: 20px;
+    margin-right: 900px;
+    margin-top: 20px;
+}
+
 /* *********************A section about the college-end****************** */
 
 
@@ -236,22 +248,22 @@ ul{
     position: relative;
 }
 
-.Events h3{
-    font-size: 30px;
+.Events h4{
+    font-size: 22px;
     color: #fff;
     position: absolute;
-    top: 120px;
+    top: 100px;
     right: 50px;
 }
 
 .box{
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border: 1px solid #fff;
     position: absolute;
-    top: 50%;
+    top: 42%;
     right: 32%;
-    opacity: .6;
+    opacity: .5;
 }
 
 .box:hover{
@@ -260,58 +272,57 @@ ul{
 
 .box::before{
     content: '';
-    width: 30px;
+    width: 25px;
     height: 1px;
     background-color: #fff;
     position: absolute;
-    top: 35px;
-    right: 57px;
+    top: 32px;
+    right: 53px;
 }
 
 .box::after{
     content: '30';
-    font-size: 33px;
+    font-size: 32px;
     color: #fff;
     position: absolute;
-    top: 18px;
-    right: 15px;
-    opacity: .5;
+    top: 3px;
+    right: 16px;
+    opacity: .3;
 }
 
 .Events span{
-    
     color: #727272;
-    font-size: 20px;
+    font-size: 14px;
     position: absolute;
-    top: 120%;
-    right: 25%;
+    top: 110%;
+    right: 18%;
 }
 
 .Events__Events--a{
     border: 1px solid #ffffff56;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 13px;
     color: #fff;
     padding: 5px 10px;
     position: absolute;
-    top: 30%;
+    top: 25%;
     right: 55%;
 }
 
 .Events__Opening--a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
     position: absolute;
-    top: 54%;
+    top: 45%;
     right: 40%;
 }
 
 .Events p{
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff93;
     position: absolute;
-    top: 63%;
+    top: 53%;
     right: 40%;
 }
 
@@ -320,7 +331,7 @@ ul{
     font-size: 12px;
     color: #ffffffbb;
     position: absolute;
-    top: 75%;
+    top: 65%;
     right: 40%;
 }
 
@@ -332,7 +343,7 @@ ul{
     top: 0;
 }
 
-/* ************************A section Events-end************************/
+/* ************************A section Events-end****************************/
 
 /* ************************A section Alumni-start************************ */
 
@@ -340,9 +351,28 @@ ul{
     text-align: center;
 }
 
-.Alumni p{
-    color: #797979ce;
-    padding: 0 1em 0 1em;
+.Alumni__header{
+    position: relative;
+}
+
+.Alumni__header h3{
+    font-size: 23px;
+    padding-top: 40px;
+}
+
+.Alumni__header p{
+    font-size: 15px;
+    color: #797979ce
+}
+
+.Alumni__header::after{
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #474747;
+    position: absolute;
+    top:150px;
+    right: 48.5%;
 }
 
 .Alumni__card{
@@ -353,27 +383,31 @@ ul{
 .card{
     width: 31%;
     height: 17em;
-    border: none;
-    margin: 10px;
+    margin: 2%;
 }
 
 .card i{
     font-size: 3.3em;
-    color: #63c1ec;
+    color: #a9d0e2;
     padding: 15px;
+    display: block;
 }
 
 .card a{
-    font-size: 1.6em;
+    font-size: 23px;
     text-decoration: none;
     color: #2471a4;
     font-weight: 700;
     padding: 15px;
 }
+.card p{
+    color: #797979ce;
+    padding: 10px 5px ;
+}
 
 .Alumni__link{
     background-color:#63c1ec ;
-    padding: 8px 20px;
+    padding: 5px 25px;
     border-radius: 5px;
     text-decoration: none;
     color: #fff;
@@ -383,7 +417,12 @@ ul{
 
 .College-and-Society__header h3{
     margin-top: 50px;
-    font-size: 26px;
+    font-size: 23px;
+}
+
+.College-and-Society__header p{
+    font-size: 15px;
+    color: #797979ce
 }
 
 /* ************************A section Alumni-end************************ */
